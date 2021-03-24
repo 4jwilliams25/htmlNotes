@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding the Power of HTML</title>
+  </head>
+  <body>
+    <h2>Understanding the Power of HTML</h2>
+
+    <hr />
+
+    <a href="index.html">Home</a>
+
+    <h4>Attributes</h4>
+
+    <!-- GLOBAL ATTRIBUTES -->
+
+    <!-- Class Attribute -->
+    <!-- Allows target of all elements with that class for JS/CSS -->
+    <div class="myClass">This element has a class</div>
+
+    <!-- ID Attribute -->
+    <!-- Unique ID; like class but can only use once -->
+    <!-- Most common for JS and links -->
+    <div id="myID">This element has a unique ID</div>
+
+    <!-- Content Editable -->
+    <blockquote contenteditable="true">Makes this block editable</blockquote>
+
+    <!-- Lang -->
+    <!-- What language formats the text should be displaying in -->
+    <p lang="en-GB">This paragraph is in British English</p>
+
+    <p lang="fr">This paragraph is in French</p>
+
+    <!-- Dir: direction -->
+    <!-- Controls the direction the text flows -->
+    <p dir="ltr">This is text that flows left to right</p>
+    <p dir="rtl">This is text that flows right to left</p>
+
+    <hr />
+
+    <h4>ARIA Roles</h4>
+    <!-- HTML attributes that provide accessible information about that specific element -->
+    <!-- Ex: hiding elements that would be inomprehensible on a screen reader -->
+
+    <h1 aria-label="Hello World">
+    <div aria-hidden="true">
+      <span>H</span>
+      <span>E</span>
+      <span>L</span>
+      <span>L</span>
+      <span>O</span>
+      <span>W</span>
+      <span>O</span>
+      <span>R</span>
+      <span>L</span>
+      <span>D</span>
+    </div>
+
+    <hr>
+
+    <h4>Weird Characters</h4>
+    <!-- HTML interpretation of special characters can get wonky -->
+    <!-- Sometimes need to use Entities to replace the characters so the browser gets it right -->
+
+    &copy;<br>
+    &trade;<br>
+    &star;
+
+    <!-- Can use &nbsp; to create a non-breaking space where you don't want words split -->
+    <p>
+        Here is a sentence that will break between every word, including between Linkedin&nbsp;Learning
+    </p>
+    <!-- Can also use the nbsp to create spaces where you want to force the browser to have spaces -->
+    <p>Here is a sentence that will force three&nbsp;&nbsp;&nbsp;spaces</p>
+
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images & Graphics</title>
+  </head>
+  <body>
+    <h2>Images & Graphics</h2>
+
+    <hr />
+
+    <a href="index.html">Home</a><br />
+
+    <!-- img tags should all have src, alt, width, and height attributes -->
+    <!-- alt tag is for screen readers, ok to leave it blank if not important but leaving it off will make the reader read off the img id -->
+    <!-- Including the width and height att will keep the text from bouncing around as the img loads -->
+    <img
+      src="https://static01.nyt.com/images/2016/08/05/us/05onfire1_xp/05onfire1_xp-jumbo-v2.jpg"
+      alt="this is fine meme"
+      width="600"
+      height="auto"
+    />
+
+    <!-- 4 main file formats: GIF -->
+    <!-- GIF is good at compressing large areas of a single color but limited colors; bad for photographs -->
+    <!-- SVG good for logos, icons ect.; vector file; can scale well w/o losing quality, small file size; use if possible  -->
+    <!-- JPG; good for compressing photos; make sure it's resized and compressed for web or site will be slow -->
+    <!-- PNG; good for photos where some transparency is needed; SOMETIMES better compression results than JPG -->
+
+    <hr />
+
+    <h4>Responsive Images</h4>
+    <!-- Make images smaller and more compressed for smaller devices and larger and higher quality for larger -->
+    <!-- Different screens support different pixel density (1X, 2X, 3X, etc) -->
+    <!-- Can make multiple copies of img of different size and res and include them all in srcset attribute; browser will decide which one to use -->
+    <!-- sizes attribute can further change which photo is selected based on screensize -->
+    <!-- srcset tells browser the res and width it has to choose from -->
+    <!-- sizes tells the browser how much fo the screen width to take up with the img at different screen -->
+    <img
+      src="https://steamuserimages-a.akamaihd.net/ugc/940586530515504757/CDDE77CB810474E1C07B945E40AE4713141AFD76/"
+      alt="dragon wallpaper"
+      width="600"
+      height="auto"
+      srcset="
+        https://steamuserimages-a.akamaihd.net/ugc/940586530515504757/CDDE77CB810474E1C07B945E40AE4713141AFD76/ 4X,
+        https://fakeurl.net 3X,
+        https://otherfakeurl.net 2X
+      "
+      sizes="(max-width: 480px) 240px, (max-width: 960px) 480px, (max-width:1440px) 960px, 1920px)"
+    />
+
+    <hr />
+
+    <h4>Responsive Pictures</h4>
+    <!-- You can use different images alltogether for different screen sizes using the picture element -->
+    <!-- Once you wrap the img in a picture element you can have more granular control through src element -->
+    <!-- Can use multiple images and sizes attribute in the source elements too -->
+    <!-- Using w instead of px tells the browser to consider src density and window width when picking the img source -->
+    <picture>
+      <source
+        media="min-width:600px"
+        srcset="
+          https://sm.ign.com/t/ign_ap/screenshot/d/diablo-imm/diablo-immortals-classes_a25r.1080.jpg 600w
+        "
+      />
+      <img
+        src="https://sm.ign.com/t/ign_ap/screenshot/d/diablo-imm/diablo-immortals-classes_a25r.1080.jpg"
+        alt="Diablo Default Image"
+        height="auto"
+        width="600"
+      />
+
+      <hr />
+
+      <h4>Figure and Captions</h4>
+      <!-- Adding captions in a figcapture element and wrapping it and the img in a figure element -->
+      <!-- Tells browsers that the two pieces of data are linked -->
+
+      <figure>
+        <img
+          src="https://blzmedia-a.akamaihd.net/d3/media/artwork/artwork-diablo-print-large.jpg"
+          alt="Old School Diablo"
+          width="600"
+          height="auto"
+        />
+        <figcaption>OG Diablo Artwork</figcaption>
+      </figure>
+    </picture>
+  </body>
+</html>

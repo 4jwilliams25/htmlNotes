@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formatting Text</title>
+  </head>
+  <body>
+    <h2>Formatting Text</h2>
+
+    <hr />
+
+    <a href="index.html">Home</a>
+
+    <h4>Headlines</h4>
+
+    <!-- Using a hierarchical system of healines makes it easier to apply CSS -->
+    <!-- Also allows the browser to properly navigate a site for a screen reader -->
+    <h1>My Headline</h1>
+    <h3>My sub-headline</h3>
+
+    <hr />
+
+    <h4>Bold and Italics</h4>
+
+    <!-- Two tags for italics -->
+    <!-- <i> for visual only emphasis (titles, etc) -->
+    <!-- <em> for verbal emphasis -->
+    <!-- Distintion is important for screen readers -->
+    <p>
+      My <em>favorite character</em> in <i>Semsame Street</i> is the Grouch.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad molestias
+      totam enim repudiandae. A cumque dolore in eligendi exercitationem
+      laborum. Incidunt, atque nesciunt. Veniam at alias obcaecati voluptatum
+      ad!
+    </p>
+
+    <!-- Same deal for bold -->
+    <!-- <b> is visual emphasis only -->
+    <!-- <strong> is verbal emphasis for strenght, importance -->
+    <!-- Usually visual bolding is just done w/CSS; b tag is last resort -->
+    <p>
+      <strong>Warning!</strong> Do not be late. <b>Chocolate and coffee</b> and
+      other things I crave. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Officiis aspernatur, quis accusamus, adipisci omnis, facilis
+      expedita sint vel beatae quaerat tempore et voluptatum asperiores?
+      Expedita asperiores molestiae tempora. Aperiam, iusto?
+    </p>
+
+    <hr />
+
+    <h4>Lists</h4>
+
+    <!-- Unordered Lists -->
+    <!-- Most common -->
+    <ul>
+      <li>Thing One</li>
+      <li>Thing Two</li>
+      <li>Thing Three</li>
+    </ul>
+    <!-- Ordered List -->
+    <ol>
+      <li>Do thing One</li>
+      <li>Do thing Two</li>
+      <li>Do thing Three</li>
+    </ol>
+    <!-- Definition List -->
+    <!-- Used for the HTML version of a key value pair -->
+    <dl>
+      <dt>Term One</dt>
+      <dd>Definition 1.1</dd>
+      <dd>Defninition 1.2</dd>
+      <dt>Term Two</dt>
+      <dd>Definition 2</dd>
+      <dt>Term Three</dt>
+      <dd>Definition 3</dd>
+    </dl>
+
+    <hr />
+
+    <h4>Quotes</h4>
+
+    <!-- Block Quote -->
+    <!-- Using the <q> tag for qutoes lets the browser know there should be a quote and then apply the regional styling -->
+    <blockquote>
+      <p>
+        <q
+          >When I say please... what I'm saying is 'please let's do this the
+          easy way.' There's always the other thing</q
+        >
+      </p>
+      <p lang="fr">
+        <q
+          >When I say please... what I'm saying is 'please let's do this the
+          easy way.' There's always the other thing</q
+        >
+      </p>
+      <p lang="bg">
+        <q>
+          When I say please... what I'm saying is 'please let's do this the easy
+          way.' There's always the other thing</q
+        >
+      </p>
+      <cite>- Alex Williams</cite>
+    </blockquote>
+
+    <hr />
+
+    <h4>Dates & Times</h4>
+
+    <!-- Numerous ways to format time so the computer understands -->
+    <!-- Format using the 'datetime' attribute -->
+    <time datetime="07:00">7:00 am</time><br />
+    <!-- OR -->
+    <time datetime="2021-10-05">2 days ago</time><br />
+    <!-- Standard datetime format is hh-mm-ss.ddd+-hh:mm -->
+    <!-- +-hh:mm is plus or minus however much from GMT that time zone is -->
+    <time datetime="15:45-05:00">3:45 in New York</time>
+    <!-- A large number of formatting styles that are allowed; look them up -->
+
+    <hr />
+
+    <h4>Code, Pre, and Br</h4>
+
+    <!-- <code> tag is used to demark code on a webpage -->
+    <!-- To write an actual HTML tag but not have the webpage interpret it as HTML use HTML entity &lt; -->
+    <p>
+      We can write <code>{color:green;}</code> in our CSS, and it will apply to
+      anything marked as an &lt;h4&gt; element
+    </p>
+    <!-- Usually HTML might ignore formatting; <br> and <pr> are just ways to get it to not ignore it -->
+    <!-- br is a line break -->
+    <p>
+      Roses are red<br />
+      Violoets are blue <br />
+      Life is devoid of meaning<br />
+    </p>
+    <!-- pre basically takes a block of text and keeps the formatting -->
+    <pre>
+      I want to        write
+              this block of   text
+          And keep my wack-a-doo
+              for mat ting
+    </pre>
+
+    <hr />
+
+    <h4>Subscripts and Superscripts</h4>
+    <!-- Set text above and below the main line -->
+    <!-- Subscript -->
+    <p>H<sub>2</sub>0</p>
+    <!-- Superscripts -->
+    <p>Something that has a footnote.<sup>2</sup></p>
+
+    <hr />
+
+    <h4>Small</h4>
+    <!-- Not used to just make text smaller;css -->
+    <!-- Used to mark text that has a small MEANING -->
+    <small>2021 Here We Go Again Company</small>
+  </body>
+</html>

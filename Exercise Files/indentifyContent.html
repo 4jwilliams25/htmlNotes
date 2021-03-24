@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Ways to Identify Content</title>
+  </head>
+  <body>
+    <h2>More Ways to Identify Content</h2>
+
+    <hr />
+
+    <a href="index.html">Home</a>
+
+    <h4>Supporting Languages</h4>
+
+    <!-- lang attribute helps screen readers prununciate correctly, search engines know when to list sites and in what language, correct dictionaires will pop up, etc -->
+    <!-- Will go on the wrapping html element -->
+    <!-- Important even to determine the specific flavor of english -->
+    <!-- If multi-lingual website you'll want to put lang attribute on each element -->
+
+    <!-- dir attribute can determine which direction text flows; if for whole page put it in the HTML element -->
+
+    <!-- charset attribute defines the alphabet or set of characters for the script language -->
+    <!-- UTF-8 is the most modern character set which is why most HTML pages will contain a meta tag with it -->
+
+    <hr />
+
+    <h4>Generic Elements: Div and Span</h4>
+
+    <!-- For when need element to wrap group of elements, mark a phrase, or target part of the DOM -->
+    <!-- Divs used to be used for everything, modern HTML incorporates a lot more semantic tags that are much more user and accessibility friendly -->
+    <!-- Div is block level element, span is inline -->
+    <article lang="en">
+      <h1>This is the Headline</h1>
+      <div style="border-style: solid">
+        <p>The first paragraph</p>
+        <p>Some text in the second paragraph</p>
+        <p>
+          Third paragraph. <span lang="es">Esta oracion esta en espanol</span>.
+          Some of this text is in another language
+        </p>
+        <p>Fourth paragraph</p>
+      </div>
+    </article>
+  </body>
+</html>

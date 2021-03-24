@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Interactive Elements</title>
+  </head>
+  <body>
+    <h2>Forms and Interactive Elements</h2>
+
+    <hr />
+
+    <a href="index.html">Home</a>
+
+    <form>
+      <!-- To connect labels and their inputs can either add a 'for' attribute to the label and an 'id' to the input -->
+      <!-- Or we can wrap the input in the label element -->
+      <!-- type attribute adds additional functionality and validation to the inputs -->
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" />
+      <br />
+
+      <label>
+        Email
+        <input
+          name="email"
+          type="email"
+          required
+          placeholder="me@example.com"
+        />
+      </label>
+      <br />
+      <!-- Import to connect the label to input or alt users won't be able to use -->
+      <!-- Can test by clicking on the label, relevent input should highlight -->
+
+      <label for="password">Password</label>
+      <input id="password" name="Password" type="password" />
+      <br />
+
+      <label for="search">Search</label>
+      <input id="search" name="name" type="search" />
+      <br />
+
+      <label for="phone">Phone Number</label>
+      <input id="phone" name="phone" type="tel" />
+      <br />
+
+      <!-- Text area is an element now -->
+      <label for="textarea">Text Area</label><br />
+      <textarea name="textarea" id="textarea" cols="30" rows="15"></textarea>
+      <br />
+
+      <label for="date">Date</label>
+      <input id="date" name="date" type="date" />
+      <br />
+
+      <label for="color">Color</label>
+      <input id="color" name="color" type="color" />
+      <br />
+
+      <!-- accept attribute can be used to select what kind of files you want the user to be able to upload -->
+      <!-- multiple attribute allows the file input to accept multiple files -->
+      <label for="file">File</label>
+      <input id="file" name="file" type="file" accept="image/*" multiple />
+      <br />
+
+      <label for="checkbox">Checkbox</label>
+      <!-- checkbox will need a value so it has something to pass when it is checked -->
+      <input
+        type="checkbox"
+        id="checkbox"
+        name="checkbox"
+        value="The checkbox is checked"
+        checked
+      />
+      <br />
+
+      <label for="selectlist">Choose One</label>
+      <select name="selectlist" id="selectlist">
+        <option>First Option</option>
+        <option>Second Option</option>
+        <option>Third Option</option>
+      </select>
+      <br />
+
+      <fieldset>
+        <legend>Checkboxes in a fieldset</legend>
+        <input
+          type="checkbox"
+          id="thischeck"
+          name="checkboxlist"
+          value="This"
+        />
+        <label for="thischeck">This</label>
+        <input
+          type="checkbox"
+          id="orcheck"
+          name="checkboxlist"
+          value="And or"
+        />
+        <label for="orcheck">And/Or</label>
+        <input
+          type="checkbox"
+          id="thatcheck"
+          name="checkboxlist"
+          value="That"
+        />
+        <label for="thatcheck">That</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Radio buttons in a fieldset</legend>
+        <input type="radio" id="thisradio" name="radiobutton" value="This" />
+        <label for="thisradio">This</label>
+        <input type="radio" id="orradio" name="radiobutton" value="And or" />
+        <label for="orradio">And/Or</label>
+        <input type="radio" id="thatradio" name="radiobutton" value="That" />
+        <label for="thatradio">That</label>
+      </fieldset>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </body>
+</html>

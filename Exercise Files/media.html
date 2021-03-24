@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <h2>Media</h2>
+
+    <hr />
+
+    <a href="index.html">Home</a>
+
+    <h4>Audio</h4>
+    <!-- audio element used for audio -->
+    <!-- adding controls give you the built in control funtionality from the browser -->
+    <!-- loop attribute will cause the footage to loop -->
+    <!-- autoplay will cause to autoplay; most people don't like it -->
+    <audio
+      controls
+      loop
+      src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
+    ></audio>
+
+    <br />
+
+    <!-- can remove src from audio element and use a source element instead to add multiple audio files -->
+    <!-- for if you need to have multiple file formats, browser will use the first one it understands in the list -->
+    <audio controls>
+      <source
+        src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_5MG.mp3"
+      />
+      <source
+        src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_2MG.mp3"
+      />
+    </audio>
+
+    <hr />
+
+    <h4>Video</h4>
+
+    <!-- Can use video element similar to audio -->
+    <video
+      controls
+      src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+      height="auto"
+      width="400px"
+    ></video>
+
+    <!-- Different videos are encoded in different ways, such as h.264 (most common) -->
+    <!-- h.264 is patented and not open source, a lot of effort going into developing a free option -->
+
+    <!-- Can use the same source element method to upload multiple file formats for the browser to choose from -->
+    <!-- type attribute tells the browser the file type -->
+    <video controls>
+      <source
+        src="../media/video/file_example_WMV_1280_4_9MB.wmv"
+        type="video/wmv"
+      />
+      <source
+        src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- Often won't use video elements because they aren't as responsive to network speeds as some other options -->
+
+    <hr />
+
+    <h4>Captions and Subtitles</h4>
+    <!-- Generally added with a linked vtt file -->
+    <!-- kind attribute controls the options that appear in the controls -->
+    <!-- description provides audio description for people listening to the video via a screen reader -->
+    <!-- chapters lists the chapters in the video -->
+    <video controls height="auto" width="600px">
+      <source
+        src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+        type="video/mp4"
+      />
+      <track
+        src="../media/video/sample.vtt"
+        kind="captions"
+        label="English"
+        ,
+        srclang="en"
+        default
+      />
+      <track
+        src="../media/video/spanish.vtt"
+        kind="captions"
+        label="Espanol"
+        srclang="es"
+      />
+    </video>
+
+    <hr />
+
+    <h4>Embedding through iFrames</h4>
+
+    <!-- Embedding is placing content from one site into the body of a page on another site -->
+    <!-- A lot of security considerations, your CMS may not allow just any iframe to be posted to your sites code -->
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/K-QNkug4Dvw"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- DOCTYPE declares the era of HTML -->
+<html lang="en">
+  <!-- html element declares conents are HTML -->
+  <head>
+    <!-- head is for all the information the browser needs to know but won't be displayed on the page -->
+    <meta charset="UTF-8" />
+    <!-- meta elements contain metadata that the browser needs to know -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- this tag tells the browser what kind of viewport this page is built for -->
+    <meta
+      name="description"
+      content="This is a meta tag that would be used to give the browser a description of what your site is. that will show up in search engine results"
+    />
+    <title>Putting It All Together</title>
+    <!-- title is the title for the webpage used on the browser -->
+
+    <!-- might also see 'link' element to other files like js or css -->
+    <!-- rel attribute tells browser what kind of asset that file is -->
+    <!-- href will provide url asset -->
+    <!-- browser will load files from the topdown -->
+
+    <!-- script tag tells the browser to load the javascript file -->
+    <!-- often put at the bottom of the file as well -->
+  </head>
+  <body>
+    <!-- Contains the information and content that will be displayed -->
+    <h2>Putting It All Together</h2>
+
+    <hr />
+
+    <a href="index.html">Home</a>
+
+    <h4>The HTML Page</h4>
+
+    <!-- Regardless of whether they're opening an app or typing in a URL if it's a web app there IS a url involved -->
+    <!-- A request is sent and the server responds with the specific HTML page -->
+    <!-- User goes to URL, URL sends requeset to server, server returns HTML; allways -->
+    <!-- Browser reads the file and does what it says from top to bottom, including requesting other files -->
+    <header>
+      <h2>The header element is used to hold header element</h2>
+      <p>Often holds Logo, title, navigation, etc</p>
+    </header>
+    <main>
+      <h2>This is the main Element</h2>
+      <p>This wraps around the main content of the page</p>
+    </main>
+    <section>
+      <h2>This is a section element</h2>
+      <p>
+        These are used to notate a section of content. Let's start another
+        thing. Usually has a headline.
+      </p>
+    </section>
+    <aside>
+      <h2>This is an aside element</h2>
+      <p>Used to mark something that isn't main content</p>
+    </aside>
+    <article>
+      <h2>This is an article element</h2>
+      <p>
+        Article element is wrapped around any instance of an article large or
+        small. Just means 'this' by itself is a unit of content
+      </p>
+    </article>
+    <footer>
+      <h2>Footer is used to hold a footer element</h2>
+      <p>
+        The footer doesn't necessarily need to be at the bottom. It is the
+        semantic meaning that matters more than the position
+      </p>
+    </footer>
+  </body>
+</html>

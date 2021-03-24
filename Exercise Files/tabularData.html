@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structuring Tabular Data</title>
+  </head>
+  <body>
+    <h2>Structuring Tabular Data</h2>
+
+    <hr />
+
+    <a href="index.html">Home</a>
+
+    <!-- DO use HTML tables to display tabular data -->
+    <!-- DON'T try to manipulate HTML tables into something they aren't; use the correct element -->
+    <!-- Doesn't necessarily need to look like a table (small screens) but if it's inherently a table use an HTML table -->
+
+    <!-- table element wraps around the whole table -->
+    <!-- table row (tr) wraps around elements for a row -->
+    <!-- table header (th) defines header for column -->
+    <!-- table data (td) marks a cell of content -->
+    <table>
+      <tr>
+        <!-- Table headers will go in the first table row -->
+        <th>Bird</th>
+        <th>Color</th>
+        <th>Diet</th>
+        <th>Photo</th>
+      </tr>
+      <tr>
+        <td>American Goldfinch</td>
+        <td>yellow</td>
+        <td>Mostly seeds</td>
+        <td>
+          <img
+            src="https://www.allaboutbirds.org/guide/assets/photo/63737371-480px.jpg"
+            alt="American Goldfinch"
+            height="261"
+            width="360"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Bluejay</td>
+        <td>blue</td>
+        <td>Omnivorous</td>
+        <td>
+          <img
+            src="https://nas-national-prod.s3.amazonaws.com/styles/hero_cover_bird_page/s3/sfw_fixed_01-29-2011-223.jpg?itok=BIR9fBhk"
+            alt="Bluejay"
+            height="261"
+            width="360"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Indigo Bunting</td>
+        <td>blue</td>
+        <td>Mostly seeds and insects</td>
+        <td>
+          <img
+            src="https://nas-national-prod.s3.amazonaws.com/h_a1_7508_2_indigo-bunting_julie_torkomian_breeding-adult-male.jpg"
+            alt="Indigo Bunting"
+            height="261"
+            width="360"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
